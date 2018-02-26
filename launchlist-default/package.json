@@ -1,0 +1,11 @@
+{
+  "name": "launchlist-default",
+  "version": "0.0.1",
+  "description": "A starter checklist for launchlist.",
+  "main": "launchlist-default.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joe Martucci",
+  "license": "ISC"
+}

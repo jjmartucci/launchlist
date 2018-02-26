@@ -1,0 +1,17 @@
+{
+    "listItems": [
+      {
+        "name": "site-title",
+        "title": "Site Title",
+        "description": "The site title is correct",
+        "category": "SEO"
+      },
+      {
+        "name": "cms-admin",
+        "title": "CMS Admin account is not the default",
+        "description": "The admin account for the CMS has been changed to something other than the default login.",
+        "category": "Security"
+      }
+    ]
+  }
+  
