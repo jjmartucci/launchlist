@@ -1,0 +1,29 @@
+{
+  "name": "launchlist",
+  "bin": {
+    "launchlist": "bin/launchlist.js",
+    "launchlist-build": "bin/launchlist-build.js"
+  },
+  "version": "0.0.1",
+  "description": "An extensible go-live checklist for the modern web.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjmartucci/launchlist.git"
+  },
+  "author": "Joe Martucci",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jjmartucci/launchlist/issues"
+  },
+  "homepage": "https://github.com/jjmartucci/launchlist#readme",
+  "dependencies": {
+    "shelljs": "^0.8.1"
+  },
+  "devDependencies": {
+    "launchlist-default": "0.0.1"
+  }
+}
