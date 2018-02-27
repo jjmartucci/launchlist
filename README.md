@@ -14,7 +14,7 @@ But there are problems with keeping your own checklists:
 
 ## I Just Want the Checklist
 
-The launchlist default rules are saved as a markdown file here.
+The launchlist default rules are saved as a [markdown file here](/launchlist-cli/launchlist.checklist.md).
 
 ## I Want to Build My Own List
 
