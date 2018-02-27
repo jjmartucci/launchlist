@@ -1,0 +1,10 @@
+{
+  "extends": ["launchlist-default"],
+  "listItems": [
+    {
+      "name": "no-console-logs",
+      "category": "Code Quality"
+    }
+  ],
+  "remove": ["placeholder"]
+}
