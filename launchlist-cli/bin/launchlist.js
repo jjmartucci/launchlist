@@ -20,6 +20,10 @@ const includeName = process.argv.indexOf("--includeName") > -1;
 const force = process.argv.indexOf("--force") > -1;
 const markdownMap = new Map();
 
+const validName = name => {
+  return name.toLowerCase().replace(" ", "-");
+};
+
 const args = {
   filename: filename > -1 ? process.argv[filename + 1] : "launchlist.checklist",
   includeName: includeName,
@@ -92,7 +96,7 @@ categories.forEach(category => {
 // First, the TOC for categories
 markdownMap.forEach((value, key) => {
   if (value.length) {
-    list += `- [${key}](#${key}) \n`;
+    list += `- [${key}](#${validName(key)}) \n`;
   }
 });
 
@@ -100,7 +104,7 @@ list += `\n`;
 
 markdownMap.forEach((value, key) => {
   if (value.length) {
-    list += `## ${key}<a name="${key}"></a>\n`;
+    list += `## ${key}<a name="${validName(key)}"></a>\n`;
 
     value.forEach(item => {
       list += `- [ ] ${item.title}: ${item.description}`;
