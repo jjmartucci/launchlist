@@ -18,10 +18,13 @@ The launchlist default rules are saved as a [markdown file here](/launchlist-cli
 
 ## I Want to Build My Own List
 
+`npm install --save-dev launchlist` or `yarn add launchlist` then just `launchlist` will build the default one for you.
+
 If you create a `launchlist.json` file at the root of your project, you can customize the generated checklist. The Launchlist config has three properties:
-- `extends`: Extends another configuration. If you leave this blank it will load `launchlist-default`.
-- `listItems`: Add any custom rules here, or change the properties of existing rules.
-- `remove`: Remove any rules by name.
+
+* `extends`: Extends another configuration. If you leave this blank it will load `launchlist-default`.
+* `listItems`: Add any custom rules here, or change the properties of existing rules.
+* `remove`: Remove any rules by name.
 
 An example config:
 
@@ -50,4 +53,4 @@ An example config:
 | ------------- | :-------: | -------------------: | ----------------------------------------------------: |
 | --filename    |  string   | launchlist.checklist |                      Name of markdown file generated. |
 | --includeName |   none    |                false | Appends the name of the list item to the description. |
-| --force       |   none    |                false |                         Overwrite existing checklist. |
+| --force       |   none    |                false |  Overwrite any existing checklist with the same name. |
