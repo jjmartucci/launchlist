@@ -2,12 +2,13 @@
   "name": "launchlist",
   "bin": {
     "launchlist": "bin/launchlist.js",
-    "launchlist-build": "bin/launchlist-build.js"
+    "launchlist-md": "bin/launchlist-md.js"
   },
   "version": "0.0.1",
   "description": "An extensible go-live checklist for the modern web.",
   "main": "index.js",
   "scripts": {
+    "bundle": "parcel build ./src/app.js --out-dir ./express/static",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,8 +21,13 @@
     "url": "https://github.com/jjmartucci/launchlist/issues"
   },
   "homepage": "https://github.com/jjmartucci/launchlist#readme",
-  "dependencies": {},
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  },
   "devDependencies": {
-    "launchlist-default": "0.0.2"
+    "launchlist-default": "0.0.2",
+    "opn": "^5.2.0",
+    "parcel-bundler": "^1.6.2"
   }
 }
