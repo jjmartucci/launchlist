@@ -8,7 +8,8 @@
   "description": "An extensible go-live checklist for the modern web.",
   "main": "index.js",
   "scripts": {
-    "bundle": "parcel build ./src/app.js --out-dir ./express/static",
+    "bundle:dev": "parcel ./src/app.js --out-dir ./express/static",
+    "bundle:prod": "parcel build ./src/app.js --out-dir ./express/static",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,7 +24,9 @@
   "homepage": "https://github.com/jjmartucci/launchlist#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
   },
   "devDependencies": {
     "launchlist-default": "0.0.2",
