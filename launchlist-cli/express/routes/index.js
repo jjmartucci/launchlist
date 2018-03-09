@@ -5,10 +5,14 @@ const path = require("path");
 const router = express.Router();
 const public = path.join(__dirname, "..", "views");
 const defaultFileName = "launchlist.json";
+const loadAllConfigs = require("../../scripts/loadAllConfigs");
 
 /* GET home page. */
 router.get("/", function(req, res, next) {
   const list = JSON.stringify({ test: "test" });
+  const allConfigs = loadAllConfigs();
+
+  console.log(allConfigs);
   fs.writeFile(`${process.cwd()}/${defaultFileName}`, list, err => {
     // throws an error, you could also catch it here
     if (err) throw err;
