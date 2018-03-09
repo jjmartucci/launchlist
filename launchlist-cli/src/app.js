@@ -6,20 +6,39 @@ import "whatwg-fetch";
 console.log("hello world");
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      error: false,
+      list: {}
+    };
+  }
   componentDidMount() {
     fetch("/list")
-      .then(function(response) {
+      .then(response => {
         return response.json();
       })
-      .then(function(json) {
-        console.log("parsed json", json);
+      .then(json => {
+        this.setState({ list: json });
       })
-      .catch(function(ex) {
-        console.log("parsing failed", ex);
+      .catch(ex => {
+        this.setState({
+          error: `Couldn't load list!`
+        });
       });
   }
+
   render() {
-    return <h1>It's an app!</h1>;
+    let categories = [];
+    if (this.state.list.length) {
+      categories = this.state.list.reduce((array, listItem) => {
+        if (array.indexOf(listItem.category) === -1) {
+          array.push(listItem.category);
+        }
+        return array;
+      }, []);
+    }
+    return <h1>{categories}</h1>;
   }
 }
 

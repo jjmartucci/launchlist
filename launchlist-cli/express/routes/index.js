@@ -10,10 +10,9 @@ const loadAllConfigs = require("../../scripts/loadAllConfigs");
 /* GET home page. */
 router.get("/", function(req, res, next) {
   const list = JSON.stringify({ test: "test" });
-  const allConfigs = loadAllConfigs();
+  const allConfigs = JSON.stringify(loadAllConfigs());
 
-  console.log(allConfigs);
-  fs.writeFile(`${process.cwd()}/${defaultFileName}`, list, err => {
+  fs.writeFile(`${process.cwd()}/${defaultFileName}`, allConfigs, err => {
     // throws an error, you could also catch it here
     if (err) throw err;
 
