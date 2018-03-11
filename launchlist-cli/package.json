@@ -8,7 +8,7 @@
   "description": "An extensible go-live checklist for the modern web.",
   "main": "index.js",
   "scripts": {
-    "bundle:dev": "parcel ./src/app.js --out-dir ./express/static",
+    "bundle:dev": "parcel ./src/App.js --out-dir ./express/static",
     "bundle:prod": "parcel build ./src/app.js --out-dir ./express/static",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -25,8 +25,11 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
+    "lowdb": "^1.0.0",
+    "markdown": "^0.5.0",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "styled-components": "^3.2.1"
   },
   "devDependencies": {
     "launchlist-default": "0.0.2",

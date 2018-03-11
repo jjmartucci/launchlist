@@ -1,6 +1,9 @@
 const loadAllConfigs = () => {
   const fs = require("fs");
   const configFile = "launchlist.config.json";
+  const dupes = [];
+  const keys = [];
+
   let config;
   if (fs.existsSync(`${process.cwd()}/${configFile}`)) {
     config = require(`${process.cwd()}/${configFile}`);
@@ -30,6 +33,23 @@ const loadAllConfigs = () => {
   if (config.listItems && config.listItems.length) {
     allItems = allItems.concat(config.listItems);
   }
+
+  allItems.forEach((item, index) => {
+    const keyIndex = keys.indexOf(item.name);
+    if (keyIndex === -1) {
+      keys.push(item.name);
+    } else {
+      const existingItem = allItems[keyIndex];
+      const newListItem = Object.assign({}, existingItem, item);
+      dupes.push(index);
+      allItems[keyIndex] = newListItem;
+    }
+  });
+
+  // Remove duplicate rules
+  dupes.forEach(dupe => {
+    allItems.splice(dupe, 1);
+  });
 
   return allItems;
 };

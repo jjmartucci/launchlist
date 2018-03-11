@@ -3,6 +3,8 @@
   "listItems": [
     {
       "name": "no-console-logs",
+      "title": "No `console.log`",
+      "description": "console.log has been removed from code.",
       "category": "Code Quality"
     }
   ],

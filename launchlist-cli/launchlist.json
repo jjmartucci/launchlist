@@ -1,1 +1,154 @@
-[{"name":"analytics","title":"Analytics","description":"Analytics scripts are in place and working.","category":"SEO"},{"name":"cms-admin","title":"CMS Admin account is not the default","description":"The admin account for the CMS has been changed to something other than the default login.","category":"Security"},{"name":"css-minified","title":"CSS is Minified","description":"CSS has been minified.","category":"Performance"},{"name":"error-pages","title":"Error Pages Exist","description":"404 and 500 pages exist for the site.","category":"General"},{"name":"favicons","title":"Favicons exist","description":"","category":"General"},{"name":"font-loading","title":"Font Loading","description":"Any webfonts have only used weights loaded, and are set for a production environment.","category":"Performance"},{"name":"form-control-labels","title":"Form Controls Have Labels","description":"","category":"Accessibility"},{"name":"google-lighthouse","title":"Google Lighthouse","description":"Google Lighthouse has been run on main layouts.","category":"Performance"},{"name":"https","title":"HTTPS","description":"Production site is using HTTPS for all pages.","category":"General"},{"name":"image-alt-text","title":"Image Alt Text","description":"Images have appropriate alt text.","category":"Accessibility"},{"name":"image-bitmap-optimization","title":"SVG Images Have Been Optimized","description":"SVG images have been optimized with [SVGO](https://github.com/svg/svgo)","category":"Performance"},{"name":"image-vector-optimization","title":"Bitmap Images Have Been Optimized","description":"JPG, PNG, and GIF images have been optimized.","category":"Performance"},{"name":"no-console-logs","title":"No JavaScript Console Logs","description":"Nothing is being logged to the console in the production environment.","category":"JavaScript"},{"name":"no-javascript","title":"Site works without JavaScript","description":"A fall back experience exists for users without JavaScript enabled.","category":"JavaScript"},{"name":"placeholder","title":"Placeholder Text and Images","description":"Placeholder text and images have been removed.","category":"CMS"},{"name":"print-styles","title":"Print Stylesheets","description":"Print stylesheets exist for all content that could be printed.","category":"CSS"},{"name":"robots-txt","title":"`robots.txt` is in place.","description":"A `robots.txt` file has been created.","category":"SEO"},{"name":"server-compression","title":"Server Compression","description":"Server compression has been enabled for assets.","category":"Performance"},{"name":"site-title","title":"Site Title","description":"The site title is correct","category":"SEO"},{"name":"three-oh-one","title":"301 Redirects","description":"301 redirects are in place.","category":"SEO"},{"name":"video-closed-captions","title":"Video Closed Captions","description":"All videos on the site have closed captions available.","category":"Accessibility"},{"name":"video-transcriptions","title":"Video Transcriptions","description":"Videos have transcriptions available.","category":"Accessibility"},{"name":"xml-sitemap","title":"XML Sitemap","description":"[XML sitemap](https://support.google.com/webmasters/answer/156184?hl=en) has been generated and can be accessed at the root of the website.","category":"SEO"},{"name":"no-console-logs","category":"Code Quality"}]
+{
+  "theme": "default",
+  "title": "launchlist",
+  "checklistItems": [
+    {
+      "name": "analytics",
+      "title": "Analytics",
+      "description": "Analytics scripts are in place and working.",
+      "category": "SEO"
+    },
+    {
+      "name": "cms-admin",
+      "title": "CMS Admin account is not the default",
+      "description": "The admin account for the CMS has been changed to something other than the default login.",
+      "category": "Security"
+    },
+    {
+      "name": "css-minified",
+      "title": "CSS is Minified",
+      "description": "CSS has been minified.",
+      "category": "Performance",
+      "completed": true
+    },
+    {
+      "name": "error-pages",
+      "title": "Error Pages Exist",
+      "description": "404 and 500 pages exist for the site.",
+      "category": "General"
+    },
+    {
+      "name": "favicons",
+      "title": "Favicons exist",
+      "description": "",
+      "category": "General"
+    },
+    {
+      "name": "font-loading",
+      "title": "Font Loading",
+      "description": "Any webfonts have only used weights loaded, and are set for a production environment.",
+      "category": "Performance"
+    },
+    {
+      "name": "form-control-labels",
+      "title": "Form Controls Have Labels",
+      "description": "",
+      "category": "Accessibility",
+      "completed": true
+    },
+    {
+      "name": "google-lighthouse",
+      "title": "Google Lighthouse",
+      "description": "Google Lighthouse has been run on main layouts.",
+      "category": "Performance"
+    },
+    {
+      "name": "https",
+      "title": "HTTPS",
+      "description": "Production site is using HTTPS for all pages.",
+      "category": "General"
+    },
+    {
+      "name": "image-alt-text",
+      "title": "Image Alt Text",
+      "description": "Images have appropriate alt text.",
+      "category": "Accessibility",
+      "completed": false
+    },
+    {
+      "name": "image-bitmap-optimization",
+      "title": "SVG Images Have Been Optimized",
+      "description": "SVG images have been optimized with [SVGO](https://github.com/svg/svgo)",
+      "category": "Performance"
+    },
+    {
+      "name": "image-vector-optimization",
+      "title": "Bitmap Images Have Been Optimized",
+      "description": "JPG, PNG, and GIF images have been optimized.",
+      "category": "Performance"
+    },
+    {
+      "name": "no-console-logs",
+      "title": "No `console.log`",
+      "description": "console.log has been removed from code.",
+      "category": "Code Quality"
+    },
+    {
+      "name": "no-javascript",
+      "title": "Site works without JavaScript",
+      "description": "A fall back experience exists for users without JavaScript enabled.",
+      "category": "JavaScript"
+    },
+    {
+      "name": "placeholder",
+      "title": "Placeholder Text and Images",
+      "description": "Placeholder text and images have been removed.",
+      "category": "CMS",
+      "completed": true
+    },
+    {
+      "name": "print-styles",
+      "title": "Print Stylesheets",
+      "description": "Print stylesheets exist for all content that could be printed.",
+      "category": "CSS"
+    },
+    {
+      "name": "robots-txt",
+      "title": "`robots.txt` is in place.",
+      "description": "A `robots.txt` file has been created.",
+      "category": "SEO",
+      "completed": false
+    },
+    {
+      "name": "server-compression",
+      "title": "Server Compression",
+      "description": "Server compression has been enabled for assets.",
+      "category": "Performance"
+    },
+    {
+      "name": "site-title",
+      "title": "Site Title",
+      "description": "The site title is correct",
+      "category": "SEO",
+      "completed": false
+    },
+    {
+      "name": "three-oh-one",
+      "title": "301 Redirects",
+      "description": "301 redirects are in place.",
+      "category": "SEO",
+      "completed": true
+    },
+    {
+      "name": "video-closed-captions",
+      "title": "Video Closed Captions",
+      "description": "All videos on the site have closed captions available.",
+      "category": "Accessibility",
+      "completed": true
+    },
+    {
+      "name": "video-transcriptions",
+      "title": "Video Transcriptions",
+      "description": "Videos have transcriptions available.",
+      "category": "Accessibility",
+      "completed": false
+    },
+    {
+      "name": "xml-sitemap",
+      "title": "XML Sitemap",
+      "description": "[XML sitemap](https://support.google.com/webmasters/answer/156184?hl=en) has been generated and can be accessed at the root of the website.",
+      "category": "SEO",
+      "completed": true
+    }
+  ]
+}
