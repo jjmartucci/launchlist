@@ -127,7 +127,7 @@
       "title": "301 Redirects",
       "description": "301 redirects are in place.",
       "category": "SEO",
-      "completed": true
+      "completed": false
     },
     {
       "name": "video-closed-captions",
@@ -148,7 +148,7 @@
       "title": "XML Sitemap",
       "description": "[XML sitemap](https://support.google.com/webmasters/answer/156184?hl=en) has been generated and can be accessed at the root of the website.",
       "category": "SEO",
-      "completed": true
+      "completed": false
     }
   ]
 }
