@@ -2309,9 +2309,9 @@ kind-of@^6.0.0, kind-of@^6.0.2:
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.2.tgz#01146b36a6218e64e58f3a8d66de5d7fc6f6d051"
 
-launchlist-default@0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/launchlist-default/-/launchlist-default-0.0.2.tgz#ddee1db49834f40eece865839e941b4d99e0d2bb"
+launchlist-default@0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/launchlist-default/-/launchlist-default-0.0.4.tgz#e5e016c0737d52fd1e6d317bfcd0fb5afcba1012"
 
 lazy-cache@^1.0.3:
   version "1.0.4"

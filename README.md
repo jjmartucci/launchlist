@@ -16,11 +16,13 @@ But there are problems with keeping your own checklists:
 
 The launchlist default rules are saved as a [markdown file here](/launchlist-cli/launchlist.checklist.md).
 
-## I Want to Build My Own List
+## I Want a Checklist I Can Save In My Git Repo
 
-`npm install --save-dev launchlist` or `yarn add launchlist` then just `launchlist` will build the default one for you.
+`npm install --save-dev launchlist` or `yarn add launchlist` 
 
-If you create a `launchlist.json` file at the root of your project, you can customize the generated checklist. The Launchlist config has three properties:
+then run `launchlist` and an express server will launch at `localhost:1234` and a file called `launchlist.json` will be created at where you ran `launchlist` from.
+
+If you create a `launchlist.config.json` file at the root of your project, you can customize the generated checklist. The Launchlist config has three properties:
 
 * `extends`: Extends another configuration. If you leave this blank it will load `launchlist-default`.
 * `listItems`: Add any custom rules here, or change the properties of existing rules.
@@ -47,7 +49,10 @@ An example config:
     }
 ```
 
-## CLI Options
+## I Want a Markdown Checklist of My Own 
+Sometimes you might want to generate a checklist but not save it in Git or be able to share it with people who don’t have access to the codebase. For that, there’s `launchlist-md`. It will create a markdown file where you run it with the same rules that `launchlist` uses, and can use the same config overrides.
+
+## `launchlist-md` CLI Options
 
 | Flag          | Parameter |              Default |                                           Description |
 | ------------- | :-------: | -------------------: | ----------------------------------------------------: |
